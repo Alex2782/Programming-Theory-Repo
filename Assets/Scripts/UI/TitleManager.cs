@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class TitleManager : MonoBehaviour
 {
@@ -10,9 +11,9 @@ public class TitleManager : MonoBehaviour
     public void OnClickStart()
     {
         string userName = inputName.text;
+        Debug.Log($"userName: {userName} ");
 
-        //TODO start "Main Scene"
-        Debug.Log($"TODO start 'Main Scene', userName: {userName} ");
+        SceneManager.LoadScene(1);
     }
 
 }
