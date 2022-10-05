@@ -13,6 +13,8 @@ public class TitleManager : MonoBehaviour
         string userName = inputName.text;
         Debug.Log($"userName: {userName} ");
 
+        GameManager.Instance.userName = userName;
+
         SceneManager.LoadScene(1);
     }
 
