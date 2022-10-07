@@ -13,7 +13,7 @@ public class PlayerUnit : Unit
     // POLYMORPHISM
     protected override void Init()
     {
-        m_speed = 12.0f;
+        Speed = 12.0f;
         color = Color.blue;
         scale = new Vector3(1.0f, 1.5f, 1.0f);
 

@@ -11,7 +11,7 @@ public class MonsterUnit : Unit
     // POLYMORPHISM
     protected override void Init()
     {
-        m_speed = 15.0f;
+        Speed = 15.0f;
         color = Color.red;
         scale = new Vector3(2.0f, 2.5f, 2.0f);
 
@@ -23,6 +23,6 @@ public class MonsterUnit : Unit
         PlayerUnit player = FindObjectOfType<PlayerUnit>();
         Vector3 toPlayer = (player.gameObject.transform.position - gameObject.transform.position).normalized;
 
-        rb.AddForce(toPlayer * m_speed, ForceMode.Acceleration);
+        rb.AddForce(toPlayer * Speed, ForceMode.Acceleration);
     }
 }

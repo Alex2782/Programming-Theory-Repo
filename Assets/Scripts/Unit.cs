@@ -8,7 +8,7 @@ public abstract class Unit : MonoBehaviour
     protected Color color = Color.black;
 
     // ENCAPSULATION
-    protected float m_speed = 1.0f;
+    private float m_speed = 1.0f;
     public float Speed
     {
         //getter
